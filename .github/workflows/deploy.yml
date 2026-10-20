@@ -23,8 +23,8 @@ jobs:
       - name: Verify webpage content
         run: |
           test -f index.html
-          grep -q "CI/CD Practical" index.html
-          grep -q "GitHub Actions" index.html
+          grep -q "Welcome to My CI/CD Website" index.html
+          grep -q "Version 2: Updated automatically using CI/CD!" index.html
           echo "Website content verified successfully."
 
   deploy-website:
